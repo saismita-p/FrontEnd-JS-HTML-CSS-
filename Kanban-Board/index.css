@@ -1,0 +1,170 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --p1: pink;
+  --p2: greenyellow;
+  --p3: blue;
+  --p4: black;
+}
+header {
+  width: 100%;
+  display: flex;
+  background-color: #4b4b4b;
+  padding: 10px 0 10px 50px;
+}
+
+.sorting {
+  display: flex;
+  padding: 10px;
+  background-color: #3d3d3d;
+  column-gap: 10px;
+}
+
+.sorting .box {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.sorting .box:hover {
+  border: 2px solid white;
+}
+
+.sorting .box.p1 {
+  background-color: var(--p1);
+}
+
+.sorting .box.p2 {
+  background-color: var(--p2);
+}
+.sorting .box.p3 {
+  background-color: var(--p3);
+}
+.sorting .box.p4 {
+  background-color: var(--p4);
+}
+
+.actions {
+  display: flex;
+  background-color: #3d3d3d;
+  margin: 0 30px;
+}
+.actions .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50px; */
+  width: 50px;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+
+.actions .box:hover {
+  background-color: green;
+}
+
+.search input {
+  width: 300px;
+  height: 50px;
+  padding: 0 20px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.task-section {
+  display: flex;
+  column-gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.task-section .task {
+  display: flex;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ccc;
+  flex-direction: column;
+}
+
+.task-section .task .task-priority {
+  height: 10px;
+  background-color: var(--p1);
+}
+
+.task-section .task .task-id {
+  height: 20px;
+  background-color: black;
+}
+
+.task-section .task .task-title {
+  flex-grow: 1;
+  display: flex;
+  padding: 10px;
+  background-color: orange;
+}
+
+.heading {
+  padding: 15px 0 0 30px;
+}
+
+.add-task-modal {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-task-modal .left-section {
+  display: flex;
+  flex-grow: 1;
+}
+
+.add-task-modal .left-section textarea {
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+}
+.add-task-modal .right-section {
+  display: flex;
+  width: 120px;
+  flex-direction: column;
+  padding: 10px;
+  row-gap: 10px;
+  justify-content: center;
+}
+
+.add-task-modal .right-section .box {
+  height: 60px;
+  width: 100px;
+}
+
+.add-task-modal .right-section .box:hover {
+  border: 2px solid white;
+}
+.add-task-modal .right-section .box.p1 {
+  background-color: var(--p1);
+}
+
+.add-task-modal .right-section .box.p2 {
+  background-color: var(--p2);
+}
+.add-task-modal .right-section .box.p3 {
+  background-color: var(--p3);
+}
+.add-task-modal .right-section .box.p4 {
+  background-color: var(--p4);
+}
+
+.hide {
+  display: none;
+}
