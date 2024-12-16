@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="sorting">
-        <div class="p1 box"></div>
-        <div class="p2 box"></div>
-        <div class="p3 box"></div>
-        <div class="p4 box"></div>
+      <div class="filter">
+        <div class="p1 box" data-priority="p1"></div>
+        <div class="p2 box" data-priority="p2"></div>
+        <div class="p3 box" data-priority="p3"></div>
+        <div class="p4 box" data-priority="p4"></div>
       </div>
       <div class="actions">
         <div class="add box">+</div>
         <div class="remove box">x</div>
       </div>
       <div class="search">
-        <input type="text" placeholder="Search by Id" />
+        <input type="text" placeholder="Search by Id or Name" />
       </div>
     </header>
     <h1 class=".heading">Kanban Board</h1>
-    <div class="task-section"></div>
+    <div class="task-section non-editable"></div>
     <div class="add-task-modal hide">
       <div class="left-section">
         <textarea placeholder="Enter your task "></textarea>
       </div>
       <div class="right-section">
-        <div class="p1 box"></div>
-        <div class="p2 box"></div>
-        <div class="p3 box"></div>
-        <div class="p4 box"></div>
+        <div class="p1 box" data-priority="p1"></div>
+        <div class="p2 box" data-priority="p2"></div>
+        <div class="p3 box" data-priority="p3"></div>
+        <div class="p4 box" data-priority="p4"></div>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./index2.js"></script>
   </body>
 </html>
